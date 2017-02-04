@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration version="1.0.9.2">
+  <DisplayManager>
+    <SystemInitScript/>
+    <SystemStartScript/>
+  </DisplayManager>
   <General>
     <HarmonyPath path="../.."/>
     <Processor name=""/>
@@ -241,7 +245,8 @@
       <Template>
         <Name>drv_usart_static.c</Name>
         <Path>Source Files/app/system_config/default/framework/driver/usart/src</Path>
-        <Checksum>08A884B776372378455174F2909E54E3</Checksum>
+        <Checksum>7B14D6E9ABF39809DFD8546B042813BA</Checksum>
+        <ProjectFileChecksum>66C59AE7C49D9063C98C230716DC2FF3</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>sys_ports_static.c</Name>
@@ -251,7 +256,7 @@
       <Template>
         <Name>system_init.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>72BA703DDCAB452FD10CCA93DD8828A9</Checksum>
+        <Checksum>24D4FBBB2B639D51F761F157241424DF</Checksum>
       </Template>
       <Template>
         <Name>main.c</Name>
@@ -260,7 +265,7 @@
       <Template>
         <Name>system_interrupt_a.S</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>208C38F4220EB3D701B5B9CC9CB6A378</Checksum>
+        <Checksum>B6CBE423647A8929F1046AB6F68B1BD1</Checksum>
       </Template>
       <Template>
         <Name>drv_tmr_static.h</Name>
@@ -289,7 +294,8 @@
       <Template>
         <Name>drv_usart_mapping.c</Name>
         <Path>Source Files/app/system_config/default/framework/driver/usart/src</Path>
-        <Checksum>115DDE4372E58D4116BC77DC36FD97DC</Checksum>
+        <Checksum>99B1234D6368258201525EBAE6D7FADE</Checksum>
+        <ProjectFileChecksum>48FB35C5FDC9EBA449EF774A09221EE8</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>drv_usart_static.h</Name>
@@ -304,17 +310,18 @@
       <Template>
         <Name>system_tasks.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>E6065272246884BFBFF1DECE7F974D81</Checksum>
+        <Checksum>8EF63CA106EC9D232898405F0A4B3E36</Checksum>
       </Template>
       <Template>
         <Name>drv_usart_static_byte_model.c</Name>
         <Path>Source Files/app/system_config/default/framework/driver/usart/src</Path>
-        <Checksum>E56B5A603F0427F96760518142226E69</Checksum>
+        <Checksum>29B92242D5EBC5F0D949EAC1AD786CA3</Checksum>
+        <ProjectFileChecksum>494AF022550802BE97DFC2254D1A1161</ProjectFileChecksum>
       </Template>
       <Template>
         <Name>system_config.h</Name>
         <Path>Header Files/app/system_config/default</Path>
-        <Checksum>C9CF8F3C0C51CEF97EA27099E7AA592D</Checksum>
+        <Checksum>236F45E41DC460EE1CC8B28A832BB6DF</Checksum>
       </Template>
       <Template>
         <Name>app.h</Name>
@@ -333,7 +340,7 @@
       <Template>
         <Name>system_interrupt.c</Name>
         <Path>Source Files/app/system_config/default</Path>
-        <Checksum>245839440E31FC0AEC9011C3A3AA8DBD</Checksum>
+        <Checksum>7F6427874FE9D30F12D8BE5FC1737A76</Checksum>
         <ProjectFileChecksum>894A25F19A519EEFBEA55DD29AA98F3D</ProjectFileChecksum>
       </Template>
       <Template>
@@ -374,8 +381,4 @@
       <Library value="../../../../bin/framework/peripheral/PIC32MX795F512L_peripherals.a"/>
     </Libraries>
   </Manifest>
-  <DisplayManager>
-    <SystemInitScript/>
-    <SystemStartScript/>
-  </DisplayManager>
 </configuration>

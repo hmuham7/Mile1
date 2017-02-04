@@ -128,12 +128,7 @@ void APP_Tasks ( void )
         unsigned char value = Q_Receive ();
         dbgOutputLoc (AFTER_RECEIVE);
         dbgOutputVal(value);
-        //dbgUARTVal(0x01);
-        //uint8_t test = DRV_USART0_ReadByte();
-        //dbgOutputVal(value);
-        //dbgUARTVal(0x02);
-        //uint8_t test2 = DRV_USART0_ReadByte();
-        //dbgUARTVal(test2);
+        dbgUARTVal(value);
     }
 }
 
