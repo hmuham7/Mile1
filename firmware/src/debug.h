@@ -23,7 +23,7 @@ extern "C" {
 #define AFTER_RECEIVE  0x06
 #define ENTER_ISR      0x07
 #define LEAVE_ISR      0x08
-#define UART           0x10
+#define UART           0x09
 #define ERROR          0xFF
 
 void dbgOutputVal (unsigned char outVal);
