@@ -32,6 +32,8 @@ void dbgOutputLoc (unsigned char outVal);
 
 void dbgUARTVal( unsigned char outVal);
 
+void dbgPinsDirection();
+
 void error ();
 
 #ifdef	__cplusplus

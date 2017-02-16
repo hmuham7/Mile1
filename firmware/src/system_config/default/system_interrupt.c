@@ -76,7 +76,7 @@ void IntHandlerDrvTmrInstance0(void)
     dbgOutputLoc (BEFORE_SEND);
     
     ISRQ_Send (teamname[nameindex]);
-    
+    //ISRQ_Send(ENTER_ISR);
     dbgOutputLoc (AFTER_SEND);
     
     if(nameindex == nameindexmax-1) {

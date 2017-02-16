@@ -104,23 +104,14 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 
 void APP_Initialize ( void )
 {
-    /* Set the direction of the ChipKit GPIO pins 40-47 to output for the dbgOutputVal function */
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_A, 0x0400);
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_B, 0x3800);
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_D, 0x0040);
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_F, 0x0003);
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_G, 0x0100);
-    
-    /* Set the direction of the ChipKit GPIO pins 30-37 to output for the dbgOutputLoc function */
-    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_E, 0x00FF);
-    
     DRV_TMR0_Initialize ();
     QInitialize(); 
 }
 
 void APP_Tasks ( void )
 {
-    dbgOutputLoc (ENTER_TASK); 
+    dbgOutputLoc (ENTER_TASK);
+    dbgPinsDirection();
     DRV_TMR0_Start(); 
     dbgOutputLoc (BEFORE_WHILE);
     while (1) {

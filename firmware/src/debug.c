@@ -114,6 +114,18 @@ void dbgOutputLoc (unsigned char outVal)
         PLIB_PORTS_PinClear (PORTS_ID_0, PORT_CHANNEL_E, PORTS_BIT_POS_7);
     }
 }
+void dbgPinsDirection()
+{
+    /* Set the direction of the ChipKit GPIO pins 40-47 to output for the dbgOutputVal function */
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_A, 0x0400);
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_B, 0x3800);
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_D, 0x0040);
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_F, 0x0003);
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_G, 0x0100);
+    
+    /* Set the direction of the ChipKit GPIO pins 30-37 to output for the dbgOutputLoc function */
+    PLIB_PORTS_DirectionOutputSet (PORTS_ID_0, PORT_CHANNEL_E, 0x00FF);
+}
 
 void dbgUARTVal( unsigned char outVal)
 {
@@ -125,9 +137,3 @@ void error ()
     while (1);
 }
 
-/*
-void dbgUARTVal (unsigned char outVal)
-{
-    DRV_USART_WriteByte(debugData.uart_txrx1, outVal);
-}
-*/
